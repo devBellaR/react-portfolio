@@ -32,6 +32,7 @@ const Services = () => {
                     <Service>
                         <FontAwesomeIcon icon={faCamera} fontSize="50px" color="var(--light-grey)"/>
                         <h2>Photography</h2>
+                        <div></div>
                         <p>
                         Lorem ipsum dolor, sit amet consectetur 
                         adipisicing elit.
@@ -40,6 +41,7 @@ const Services = () => {
                     <Service>
                         <FontAwesomeIcon icon={faVideo} fontSize="50px" color="var(--light-grey)"/>
                         <h2>Videography</h2>
+                        <div></div>
                         <p>
                         Lorem ipsum dolor, sit amet consectetur 
                         adipisicing elit.
@@ -48,6 +50,7 @@ const Services = () => {
                     <Service>
                         <FontAwesomeIcon icon={faWandMagicSparkles} fontSize="50px" color="var(--light-grey)"/>
                         <h2>Editing</h2>
+                        <div></div>
                         <p>
                         Lorem ipsum dolor, sit amet consectetur 
                         adipisicing elit.

@@ -5,7 +5,7 @@ import {
     TextContainer,
 } from './AboutStyles';
 
-import AboutImage from '../../assets/About_Image.jpg';
+import AboutImage from '../../assets/About.jpg';
 
 // Animations
 import { scrollReveal } from "../../Animations";
@@ -28,7 +28,7 @@ const About = () => {
                 </ImageContainer>
                 <TextContainer>
                     <h3>About Us</h3>
-                    <h2>Lorem ipsum</h2>
+                    <h2>What we do</h2>
                     <p> 
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                     Aspernatur exercitationem corporis necessitatibus soluta eum 

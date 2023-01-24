@@ -28,6 +28,6 @@ export const MobileLinks = styled.li`
     color: var(--white);
     cursor: pointer;
     &:hover {
-        scale:1.1;
+        color: var(--gold);
     }
 `;

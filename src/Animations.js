@@ -3,11 +3,9 @@
  export const backgroundAnim = {
      hidden: {
          opacity: 0, 
-         y: -1000,
      },
      show: {
          opacity: 1,
-         y: 0,
          transition: {
              duration: 1,
          }
@@ -23,8 +21,7 @@
         opacity: 1, 
         y: 0,
         transition: {
-            duration: 3,
-            staggerChildren: 1,
+            duration: 1.5,
         }
         
     }
@@ -33,13 +30,12 @@
 export const buttonAnim = {
     hidden: {
         opacity: 0,
-        scale: 0,
     },
     show: {
         opacity: 1,
-        scale: 1,
         transition: {
-            duration: 4
+            delay: 1,
+            duration: 2
         }
     }
 };
@@ -64,49 +60,21 @@ export const navAnim = {
 
 export const scrollReveal = {
     hidden: {
-        opacity: 0 , 
+        opacity: 0,
+        y: '10%',
         transition: { 
-            duration: 0.5,
+            duration: .5,
+            ease: "easeInOut"
         },
     },
     show: {
       opacity: 1,
+      y: '0%',
       transition: {
-        duration: 0.5,
+        ease: "easeInOut",
+        duration: .5,
         staggerChildren: .5,
+        delayChildren: 1,
       },
     },
-    exit: {
-        opacity: 0,
-        transition: { 
-            duration: 0.5,
-        },
-    },
 };
-
-
-export const imageAnim = {
-    hidden: {
-        opacity: 0,
-    },
-    show: {
-        opacity: 1,
-        transition: {
-            duration: 1
-        }
-    }
-}
-
-export const textAnim = {
-    hidden: {
-        opacity: 0,
-        scale: 0,
-    },
-    show: {
-        opacity: 1,
-        scale: 1,
-        transition: {
-            duration: 2
-        }
-    }
-}

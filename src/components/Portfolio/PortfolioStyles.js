@@ -7,9 +7,16 @@ export const PortfolioContainer = styled(motion.div)`
     padding: 4%;
     min-height: 100vh;
     text-align: center;
+    @media ${Device.laptop} {
+        min-height: 80vh;
+    }
     @media ${Device.tablet} {
         margin: 8%;
         padding: 8%;
+        min-height: 70vh;
+    }
+    @media ${Device.mobileL} {
+        min-height: 60vh;
     }
 `;
 
@@ -22,6 +29,7 @@ export const Title = styled.h2`
 `;
 
 export const SubTitle = styled.h3`
+    color: var(--gold);
     font-size: clamp(.7rem, 4vw, 1.2rem);
     text-transform: uppercase;
 `;

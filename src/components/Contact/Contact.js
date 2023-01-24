@@ -31,13 +31,15 @@ const Contact = () => {
             <Info>
                 <SubTitle>Contact Us</SubTitle>
                 <Title>Get in touch</Title>
-                <div><FontAwesomeIcon icon={faLocationDot} fontSize="30px"/><p>Address 1, Country</p></div>
-                <div><FontAwesomeIcon icon={faPhone} fontSize="30px"/><p>012 3456 7890</p></div>
-                <div><FontAwesomeIcon icon={faEnvelope} fontSize="30px"/><p>support@email.com</p></div>
+                <div><FontAwesomeIcon icon={faLocationDot} fontSize="25px" width="25px" color="var(--white)"/><p>Address</p></div>
+                <div><FontAwesomeIcon icon={faPhone} fontSize="25px" width="25px" color="var(--white)"/><p>012 3456 7890</p></div>
+                <div><FontAwesomeIcon icon={faEnvelope} fontSize="25px" width="25px" color="var(--white)"/><p>support@email.com</p></div>
             </Info>
             <Form>
-                <input type="text" placeholder="NAME"/>
-                <input type="tel" placeholder="PHONE"/>
+       
+                    <input type="text" placeholder="NAME"/>
+                    <input type="tel" placeholder="PHONE"/>
+       
                 {/* <input type="tel" placeholder="EMAIL"/> */}
                 <textarea placeholder="MESSAGE"></textarea>
                 <button>Send Message</button>

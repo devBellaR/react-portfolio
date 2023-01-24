@@ -6,7 +6,7 @@ export const ContactContainer = styled(motion.div)`
     padding: 10%;
     padding-left: 20%;
     padding-right: 20%;
-    background-color: #ececec;
+    background-color: var(--light-grey);
     gap: 0rem;
     @media ${Device.tablet} {
         padding: 13%;
@@ -14,6 +14,8 @@ export const ContactContainer = styled(motion.div)`
 `;
 
 export const Title = styled.h2`
+    color: var(--white);
+    padding-left: 1rem;
     padding-bottom: 5%;
     font-size: clamp(2.5rem, 4vw, 3rem);
     @media ${Device.tablet} {
@@ -22,6 +24,8 @@ export const Title = styled.h2`
 `;
 
 export const SubTitle = styled.h3`
+    color: var(--gold);
+    padding-left: 1rem;
     font-size: clamp(.7rem, 4vw, 1.2rem);
     text-transform: uppercase;
 `;
@@ -38,19 +42,19 @@ export const ContactWrapper = styled.div`
 export const Form = styled.div`
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex: 1;
     gap: 2rem;
     flex-direction: column;
     padding-top: 10%;
     textarea, input {
         border: none;
-        border-bottom: 0.1rem solid var(--grey);
+        border: 0.08rem solid var(--light-grey);
         width: 80%;
         padding: 0.7rem;
         @media ${Device.tablet} {
             width: 100%;
-    }
+        }
     }
     textarea {
         padding-bottom: 3rem;
@@ -61,12 +65,15 @@ export const Form = styled.div`
         font-size: clamp(1rem, 2vw, 1rem);
         letter-spacing: .1rem;
         border: none;
-        border-radius: 0.5rem;
-        background-color: var(--blue);
-        color: var(--white);
+        border-radius: 2rem;
+        background-color: var(--gold);
+        color: var(--grey);
         transition: all .3s ease-in-out;
         @media ${Device.mobileL} {
             padding: .75rem 1.5rem;
+        }
+        :hover {
+        background-color: var(--white);
         }
     }
 `;
@@ -77,12 +84,14 @@ export const Info = styled.div`
     align-items: flex-start;
     justify-content: center;
     flex: 1;
+
     font-size: 20px;
     div {
         display: flex;
         flex-direction: row;
         padding: 1rem;
         p {
+            color: var(--white);
             padding-left: 1rem;
         }
     }

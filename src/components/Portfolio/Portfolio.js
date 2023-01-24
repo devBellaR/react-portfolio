@@ -72,7 +72,6 @@ const Portfolio = () => {
         <SubTitle>Portfolio</SubTitle>
         <Title>Most recent work</Title>
             <Container>
-            {/* Carousel slideshow here */}
             <AnimatePresence initial={false}>
                 <motion.img
                     key={image}

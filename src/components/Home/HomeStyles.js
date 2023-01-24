@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 import { Device } from '../Responsive/responsive';
-import Image from '../../assets/About_Image.jpg';
+import Image from '../../assets/Frontpage_background.jpg';
 
-export const HomePageContainer = styled.div`
+import { motion } from 'framer-motion';
+
+export const HomePageContainer = styled(motion.div)`
     background-image: url(${Image});
-    /* background-color: #222222; */
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -20,9 +21,8 @@ export const HomePage = styled.div`
     text-align: center;
 `;
 
-export const TitleContainer = styled.div`
+export const TitleContainer = styled(motion.div)`
     text-align: center;
-    text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.49);
     h1 {
         font-size: clamp(2rem, 5vw, 3rem);
         text-transform: uppercase;
@@ -32,20 +32,48 @@ export const TitleContainer = styled.div`
     h3 {
         font-size: clamp(1rem, 5vw, 1.5rem);
         color: var(--white);
+        padding-bottom: .5rem;
     }
 `;
 
-export const Button = styled.button`
-    margin: 1rem;
+export const InfoButton = styled(motion.button)`
+    margin: .5rem;
+    padding: .75rem 2rem;
+    font-size: clamp(1rem, 2vw, 1rem);
+    letter-spacing: .1rem;
+    border: 2px solid var(--gold);
+    border-radius: 2rem;
+    background-color: transparent;
+    color: var(--black);
+    transition: all .3s ease-in-out;
+    @media ${Device.mobileL} {
+        margin: .5rem;
+        padding: .75rem 1.5rem;
+    }
+    :hover {
+        border: 2px solid var(--white);
+        background-color: var(--white);
+        cursor: pointer;
+    }
+`;
+
+
+export const ContactButton = styled(motion.button)`
+    margin: .5rem;
     padding: .75rem 2rem;
     font-size: clamp(1rem, 2vw, 1rem);
     letter-spacing: .1rem;
     border: none;
-    border-radius: 0.5rem;
-    background-color: var(--blue);
-    color: var(--white);
+    border-radius: 2rem;
+    background-color: var(--gold);
+    color: var(--black);
     transition: all .3s ease-in-out;
     @media ${Device.mobileL} {
+        margin: .5rem;
         padding: .75rem 1.5rem;
+    }
+    :hover {
+        background-color: var(--white);
+        cursor: pointer;
     }
 `;

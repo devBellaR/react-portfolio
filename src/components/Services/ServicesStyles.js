@@ -5,12 +5,12 @@ import { motion } from 'framer-motion';
 export const ServicesContainer = styled(motion.div)`
     margin: 6%;
     padding: 4%;
-    margin-right: 15%;
-    margin-left: 15%;
+    margin-right: 10%;
+    margin-left: 10%;
     text-align: center;
     @media ${Device.laptop} {
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 4%;
+        margin-right: 4%;
     }
     @media ${Device.tablet} {
         margin: 8%;
@@ -21,6 +21,7 @@ export const ServicesContainer = styled(motion.div)`
 `;
 
 export const SubTitle = styled.h3`
+    color: var(--gold);
     font-size: clamp(.7rem, 4vw, 1.2rem);
 `;
 
@@ -43,23 +44,18 @@ export const ServiceWrapper = styled.div`
 `;
 
 export const Service = styled.div`
-    padding: 3rem;
-    border-radius: 1rem;
-    box-shadow: .2rem .2rem .5rem #999999;
-    transition: transform .3s ease-in-out;
-    transform: translateY(0);
+    padding: 5rem 3rem;
     h2 {
-        font-size: clamp(1.4rem, 2vw, 1.7rem);
+        font-size: clamp(1.2rem, 2vw, 1.4rem);
         padding-top: 2rem;
+        text-transform: uppercase;
     }
     p {
         font-size: clamp(1rem, 1.5vw, 1.2rem);
         padding-top: 1rem;
     }
-    :hover {
-        transition: transform .3s ease-in-out;
-        transform: translateY(-2%);
-        scale: 1.04;
+    @media ${Device.tablet} {
+        padding: 2rem 2rem;
     }
 `;
 

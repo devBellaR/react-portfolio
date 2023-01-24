@@ -13,25 +13,6 @@ import ToggleMenu from './ToggleMenu';
 
 const MobileNav = (props) => {
 
-    // const navLinks = [
-    // {
-    //   label: "About",
-    //   id: "about"
-    // },
-    // {
-    //   label: "Services",
-    //   id: "services"
-    // },
-    // {
-    //   label: "Portfolio",
-    //   id: "portfolio"
-    // },
-    // {
-    //   label: "Contact",
-    //   id: "contact"
-    // },
-    // ]; 
-
     // Hamburger menu toggle and open mobile menu
     const [ isOpen, setIsOpen ] = useState(false);
 
@@ -43,17 +24,6 @@ const MobileNav = (props) => {
             <ToggleMenu isOpen={isOpen} toggle={() => setIsOpen(!isOpen)}/>
                 {isOpen && (
                     <MobileLinksContainer>
-                        {/* {navLinks.map(item => {
-                            return (
-                            <MobileLinks key={item.id}>
-                                <Link to={item.id}
-                                    smooth={true} 
-                                    onClick={handleClick}>
-                                    {item.label}
-                                </Link>
-                            </MobileLinks>
-                            );
-                        })} */}
                         <MobileLinks>
                             <Link to="Services" 
                                 smooth={true} 

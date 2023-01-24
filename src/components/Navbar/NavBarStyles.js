@@ -15,7 +15,7 @@ export const NavContainer = styled.div`
 
 export const Logo = styled.h2`
     z-index: 2;
-    color: var(--white);
+    color: var(--gold);
     letter-spacing: 0.5rem;
     font-size: clamp(1.2rem, 4vw, 1.5rem);
 `;
@@ -36,6 +36,6 @@ export const NavLinks = styled.li`
     transition: .3s ease-in-out;
     &:hover {
         transition: .3s ease-in-out;
-        scale: 1.1;
+        color: var(--gold);
     }
 `;
