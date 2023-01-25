@@ -1,7 +1,5 @@
 # Frontend React portfolio
 
-// Image here
-
 ## Built with
 
 This project was built using following technologies:
