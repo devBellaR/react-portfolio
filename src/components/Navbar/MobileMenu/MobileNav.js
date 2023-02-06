@@ -27,6 +27,7 @@ const MobileNav = (props) => {
                         <MobileLinks>
                             <Link to="Services" 
                                 smooth={true} 
+                                offset={-100}
                                 onClick={handleClick}>
                                 Services
                             </Link>
@@ -34,6 +35,7 @@ const MobileNav = (props) => {
                         <MobileLinks>
                             <Link to="Portfolio" 
                                 smooth={true} 
+                                offset={-70}
                                 onClick={handleClick}>
                                 Portfolio
                             </Link>
@@ -41,6 +43,7 @@ const MobileNav = (props) => {
                         <MobileLinks>
                             <Link to="About" 
                                 smooth={true} 
+                                offset={-70}
                                 onClick={handleClick}>
                                 About
                             </Link>
@@ -48,6 +51,7 @@ const MobileNav = (props) => {
                         <MobileLinks>
                             <Link to="Contact" 
                                 smooth={true} 
+                                offset={-70}
                                 onClick={handleClick}>
                                 Contact
                             </Link>
