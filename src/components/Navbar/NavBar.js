@@ -25,16 +25,28 @@ const NavBar = () => {
             {!isMobile && 
               <NavLinksContainer>
                 <NavLinks>
-                   <Link to="Services" smooth={true}>Services</Link>
+                   <Link to="Services" 
+                         smooth={true}
+                         offset={-100}>
+                         Services</Link>
                 </NavLinks>
                 <NavLinks>
-                    <Link to="Portfolio" smooth={true}>Portfolio</Link>
+                    <Link to="Portfolio" 
+                          smooth={true}
+                          offset={-70}>
+                          Portfolio</Link>
                 </NavLinks>
                 <NavLinks>
-                  <Link to="About" smooth={true}>About</Link>
+                    <Link to="About"
+                          smooth={true}
+                          offset={-70}>
+                          About</Link>
                 </NavLinks>
                 <NavLinks>
-                    <Link to="Contact" smooth={true}>Contact</Link>
+                    <Link to="Contact" 
+                          smooth={true}
+                          offset={-70}>
+                          Contact</Link>
                 </NavLinks>
             </NavLinksContainer>
             }
